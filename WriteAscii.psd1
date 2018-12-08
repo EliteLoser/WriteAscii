@@ -15,7 +15,7 @@
 ModuleToProcess = 'WriteAscii.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.2.1'
+ModuleVersion = '1.2.2'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -33,7 +33,7 @@ CompanyName = 'Svendsen Tech'
 Copyright = 'Copyright (c) 2012-present, Joakim Borger Svendsen. Svendsen Tech. All rights reserved.'
 
 # Description of the functionality provided by this module
-Description = 'Svendsen Tech. Write ASCII art text letters. See Get-Help Write-Ascii for more information.'
+Description = 'Use Svendsen Tech''s Write-Ascii function to produce (optionally colored) ASCII art text letters from strings, in PowerShell. See Get-Help Write-Ascii for more information. GitHub link here: https://github.com/EliteLoser/WriteAscii - online blog documentation here: https://www.powershelladmin.com/wiki/Ascii_art_characters_powershell_script'
 
 # Minimum version of the Windows PowerShell engine required by this module
 PowerShellVersion = '2.0'
@@ -101,16 +101,19 @@ PrivateData = @{
         Tags = @('ASCII', 'Write-Ascii', 'Art')
 
         # A URL to the license for this module.
-        # LicenseUri = ''
+        LicenseUri = 'https://github.com/EliteLoser/WriteAscii/blob/master/LICENSE'
 
         # A URL to the main website for this project.
-        ProjectUri = 'https://www.powershelladmin.com/wiki/Ascii_art_characters_powershell_script'
+        ProjectUri = 'https://github.com/EliteLoser/WriteAscii'
 
         # A URL to an icon representing this module.
         # IconUri = ''
 
         # ReleaseNotes of this module
-        ReleaseNotes = '* Dumping this in the PSGallery after a little makeover. The XML file could do with a larger character set.'
+        ReleaseNotes = '
+    * Module manifest updates with links and GitHub links.
+    * Putting this in the PSGallery after a little makeover.
+    * The XML file could do with a larger character set.'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
