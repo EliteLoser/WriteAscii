@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
 Svendsen Tech's PowerShell ASCII art module creates ASCII art characters
 from a subset of common letters, numbers and punctuation characters.
@@ -56,7 +56,13 @@ param(
         [String[]] $InputObject,
     [Switch] $PrependChar,
     [Switch] $Compression,
-    [String] $ForegroundColor = 'Default',
+    [ValidateSet("Black", "Blue", "Cyan", "DarkBlue", "DarkCyan", "DarkGray",
+        "DarkGreen", "DarkMagenta", "DarkRed", "DarkYellow", "Default", "Gray", "Green",
+        "Magenta", "Red", "Rainbow", "White", "Yellow")]
+        [String] $ForegroundColor = 'Default',
+    [ValidateSet("Black", "Blue", "Cyan", "DarkBlue", "DarkCyan", "DarkGray",
+        "DarkGreen", "DarkMagenta", "DarkRed", "DarkYellow", "Default", "Gray", "Green",
+        "Magenta", "Red", "Rainbow", "White", "Yellow")]
     [String] $BackgroundColor = 'Default'
     #[int] $MaxChars = '25'
     )
