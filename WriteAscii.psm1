@@ -55,7 +55,7 @@ param(
         [Alias('InputText')]
         [String[]] $InputObject,
     [Switch] $PrependChar,
-    [Switch] $Compression,
+    [Alias('Compression')] [Switch] $Compress,
     [ValidateSet("Black", "Blue", "Cyan", "DarkBlue", "DarkCyan", "DarkGray",
         "DarkGreen", "DarkMagenta", "DarkRed", "DarkYellow", "Default", "Gray", "Green",
         "Magenta", "Red", "Rainbow", "White", "Yellow")]
