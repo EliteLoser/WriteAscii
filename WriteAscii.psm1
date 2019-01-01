@@ -90,7 +90,7 @@ begin {
          }
     
         # Now this sure was a simple way of making sure all letter align tidily without changing a lot of code!
-        if (-not $Compression) { $MaxLines = 6 }
+        if (-not $Compress) { $MaxLines = 6 }
     
         $LetterWidthArray = $LetterArray | ForEach-Object {
             $Letter = [String] $_
