@@ -352,7 +352,7 @@ begin {
 
     # Define accepted characters (which are found in XML).
     #$AcceptedChars = '[^a-z0-9 _,!?./;:<>()¤{}\[\]\|\^=\$\-''+`\\"æøåâàáéèêóòôü]' # Some chars only works when sent as UTF-8 on IRC
-    $LetterArray = [string[]]($Letters.GetEnumerator() | Sort Name | Select -ExpandProperty Name)
+    $LetterArray = [string[]]($Letters.GetEnumerator() | Sort-Object -Property Name | Select-Object -ExpandProperty Name)
     $AcceptedChars = [regex] ( '(?i)[^' + ([regex]::Escape(($LetterArray -join '')) -replace '-', '\-' -replace '\]', '\]') + ' ]' )
     # Debug
     #Write-Host -fore cyan $AcceptedChars.ToString()
