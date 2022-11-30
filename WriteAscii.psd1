@@ -15,7 +15,7 @@
 ModuleToProcess = 'WriteAscii.psm1'
 
 # Version number of this module.
-ModuleVersion = '1.2.2.1'
+ModuleVersion = '1.3.0'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -111,7 +111,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = '
-    * Add ValidateSets for -ForegroundColor and -BackgroundColor parameter sets to allow for tab completion.'
+    * Fix cross-platform support.'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
