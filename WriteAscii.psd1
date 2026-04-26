@@ -111,7 +111,7 @@ PrivateData = @{
 
         # ReleaseNotes of this module
         ReleaseNotes = '
-    * Fix cross-platform support.'
+    * Fix cross-platform support by using "Sort-Object" instead of "Sort".'
 
         # External dependent modules of this module
         # ExternalModuleDependencies = ''
