@@ -121,7 +121,7 @@ PrivateData = @{
 } # End of PrivateData hashtable
 
 # HelpInfo URI of this module
-HelpInfoURI = 'https://www.powershelladmin.com/wiki/Ascii_art_characters_powershell_script'
+HelpInfoURI = 'https://www.powershelladmin.com/wiki/Ascii_art_characters_powershell_script.php'
 
 # Default prefix for commands exported from this module. Override the default prefix using Import-Module -Prefix.
 # DefaultCommandPrefix = ''
